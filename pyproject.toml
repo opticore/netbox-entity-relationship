@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "netbox_entity_relationship"
+version = "0.1.0"
+description = "Plugin for Entity Relationship Diagram"
+authors = ["apishark <support@opticoreit.com>"]
+readme = "README.md"
+packages = [{include = "netbox_entity_relationship"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+django-extensions = "^3.2.1"
+pygraphviz = "^1.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

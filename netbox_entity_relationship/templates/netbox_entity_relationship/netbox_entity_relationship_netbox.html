@@ -1,0 +1,21 @@
+{% extends 'generic/object.html' %}
+{% load helpers %}
+{% load plugins %}
+{% load static %}
+{% load tz %}
+
+{% block content %}
+
+<style>
+    #graph0 > polygon:nth-child(2) {fill: var(--nbx-select-content-bg)}
+    .node > text:nth-child(5) {transform: translateY(+8px) translateX(-5px);}
+</style>
+
+<div class="card">
+    <div class="card-body overflow-visible d-flex flex-wrap justify-content-between py-3">
+        <div class="col col-12" id="xml">
+            {{ xml_str | safe }}
+        </div>
+    </div>
+</div>
+{% endblock %}

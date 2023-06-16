@@ -1,0 +1,74 @@
+{% extends 'base/layout.html' %}
+{% load form_helpers %}
+{% load helpers %}
+
+
+{% block title %}
+  Generate Entity Relationships
+{% endblock title %}
+
+{% block tabs %}
+  <ul class="nav nav-tabs px-3">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="edit-form-tab" data-bs-toggle="tab" data-bs-target="#edit-form" type="button" role="tab" aria-controls="edit-form" aria-selected="true">
+        Generate
+      </button>
+    </li>
+  </ul>
+{% endblock tabs %}
+
+{% block content-wrapper %}
+  <div class="tab-content">
+    <div class="tab-pane show active" id="edit-form" role="tabpanel" aria-labelledby="object-list-tab">
+
+      <form action="" method="post" enctype="multipart/form-data" class="form-object-edit mt-5">
+        {% csrf_token %}
+
+        {% block form %}
+          {% if form.fieldsets %}
+
+            {# Render hidden fields #}
+            {% for field in form.hidden_fields %}
+              {{ field }}
+            {% endfor %}
+
+            {# Render grouped fields according to Form #}
+            {% for group, fields in form.fieldsets %}
+              <div class="field-group mb-5">
+                {% if group %}
+                  <div class="row mb-2">
+                    <h5 class="offset-sm-3">{{ group }}</h5>
+                  </div>
+                {% endif %}
+                {% for name in fields %}
+                  {% with field=form|getfield:name %}
+                    {% if not field.field.widget.is_hidden %}
+                      {% render_field field %}
+                    {% endif %}
+                  {% endwith %}
+                {% endfor %}
+              </div>
+            {% endfor %}
+
+          {% else %}
+            {# Render all fields in a single group #}
+            <div class="field-group mb-5">
+              {% render_form form %}
+            </div>
+          {% endif %}
+
+        {% endblock form %}
+
+        <div class="text-end my-3">
+          {% block buttons %}
+            <button type="submit" name="_create" class="btn btn-primary">
+              Generate
+            </button>
+            <a class="btn btn-outline-danger" href="{{ return_url }}">Cancel</a>
+          {% endblock buttons %}
+        </div>
+      </form>
+    </div>
+  </div>
+
+{% endblock content-wrapper %}
