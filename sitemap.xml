@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://netbox-entity-relationship.readthedocs.io/en/latest/</loc>
+         <lastmod>2023-06-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://netbox-entity-relationship.readthedocs.io/en/latest/app_walkthrough/</loc>
+         <lastmod>2023-06-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://netbox-entity-relationship.readthedocs.io/en/latest/code_walkthrough/</loc>
+         <lastmod>2023-06-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://netbox-entity-relationship.readthedocs.io/en/latest/install/</loc>
+         <lastmod>2023-06-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+</urlset>
