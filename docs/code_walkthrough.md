@@ -11,7 +11,6 @@ python = "^3.8"
 django-extensions = "^3.2.1"
 pygraphviz = "^1.10"
 ```
-https://python-poetry.org/docs/images/cli/#add
 
 ### __init__
 A standard netbox initialization file but with the required django_extensions package added to netbox installed apps and a loop that searches all Django apps and then adds them to the netbox app registry.
