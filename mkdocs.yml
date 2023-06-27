@@ -63,9 +63,9 @@ nav:
   - Documentation:
       - Installation:
           - Quick Start: "install.md"
-      - Celery Beat:
-          - "beat.md"
-      - Models:
-          - "models.md"
-      - Tasks:
-          - "tasks.md"
+      - Introduction:
+          - "index.md"
+      - App Walkthrough:
+          - "app_walkthrough.md"
+      - Code Walkthrough:
+          - "code_walkthrough.md"

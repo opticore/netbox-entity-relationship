@@ -11,7 +11,7 @@ namespace = Collection("netbox")
 namespace.configure(
     {
         "netbox": {
-            "project_name": "netbox-celery",
+            "project_name": "netbox-entity-relationship",
             "python_ver": "3.9",
             "local": bool(strtobool(os.environ.get("INVOKE_NETBOX_LOCAL", "false"))),
             "compose_dir": os.path.join(os.path.dirname(__file__), "docker/"),
