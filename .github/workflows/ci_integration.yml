@@ -26,6 +26,8 @@ jobs:
         run: pip install poetry
       - name: Configure Poetry
         run: poetry config virtualenvs.create false
+      - name: Install System Dependencies
+        run: sudo apt-get install -y graphviz libgraphviz-dev
       - name: Install dependencies
         run: poetry install --only=dev
       - name: "Linting: bandit"
@@ -46,6 +48,8 @@ jobs:
         run: pip install poetry
       - name: Configure Poetry
         run: poetry config virtualenvs.create false
+      - name: Install System Dependencies
+        run: sudo apt-get install -y graphviz libgraphviz-dev
       - name: Install dependencies
         run: poetry install --only=dev
       - name: "Linting: black"
@@ -66,6 +70,8 @@ jobs:
         run: pip install poetry
       - name: Configure Poetry
         run: poetry config virtualenvs.create false
+      - name: Install System Dependencies
+        run: sudo apt-get install -y graphviz libgraphviz-dev
       - name: Install dependencies
         run: poetry install --only=dev
       - name: "Configure local environment"
@@ -109,6 +115,8 @@ jobs:
         run: pip install poetry
       - name: Configure Poetry
         run: poetry config virtualenvs.create false
+      - name: Install System Dependencies
+        run: sudo apt-get install -y graphviz libgraphviz-dev
       - name: Install dependencies
         run: poetry install
       - name: "Configure local environment"
@@ -135,6 +143,8 @@ jobs:
         run: pip install poetry
       - name: Configure Poetry
         run: poetry config virtualenvs.create false
+      - name: Install System Dependencies
+        run: sudo apt-get install -y graphviz libgraphviz-dev
       - name: Install dependencies
         run: poetry install --only=dev
       - name: pull repo
