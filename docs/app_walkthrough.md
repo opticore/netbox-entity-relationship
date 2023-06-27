@@ -1,7 +1,7 @@
 ## App Walkthrough
 The Entity Relationship Diagram plugin allows customization of the Model and rendering Options.
 
-![Entity Relationship Options](docs/images/entity-relationship-options.png)
+![Entity Relationship Options](images/entity-relationship-options.png)
 
 ### App
 A Django app is a self-contained module that provides a specific functionality or set of functionalities within a Django project.
