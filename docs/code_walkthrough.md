@@ -43,7 +43,7 @@ A standard netbox initialization file but with the required django_extensions pa
 ```
 Now that the apps are registered, netbox can inject the Tab into the view for all models that are viewed from the netbox navigation pane.
 
-![Entity Relationship Tab](docs/images/entity-relationship-tab.png)
+![Entity Relationship Tab](images/entity-relationship-tab.png)
 
 ### Diagram
 This is the core of the plugin.
