@@ -12,6 +12,12 @@ django-extensions = "^3.2.1"
 pygraphviz = "^1.10"
 ```
 
+and also installed these repos.
+```
+apt-get update
+apt-get install -y graphviz libgraphviz-dev
+```
+
 ### __init__
 A standard netbox initialization file but with the required django_extensions package added to netbox installed apps and a loop that searches all Django apps and then adds them to the netbox app registry.
 ```
