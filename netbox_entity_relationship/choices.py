@@ -11,7 +11,6 @@ class AppChoices(ChoiceSet):
 
     # Create a list of related Models to include in the graph
     for model in django.apps.apps.get_models():
-
         app_label = model._meta.app_label  # pylint: disable=protected-access
         if app_label not in str(CHOICES):
             choice = ((app_label, app_label),)
