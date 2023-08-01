@@ -1,4 +1,4 @@
-*.sql.gz
+.gitignore: *.sql.gz
 .initializers
 *.pem
 configuration/*
@@ -11,10 +11,17 @@ configuration/ldap/*
 !configuration/plugins.py
 prometheus.yml
 super-linter.log
-__pycache__
 .vscode/
 docker/configuration/configuration.py
 dist/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyd
+*.pyo
+*.pyc
+*.so
 
 # Local Development
 netbox/
