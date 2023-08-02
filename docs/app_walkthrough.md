@@ -1,7 +1,7 @@
 ## App Walkthrough
 The Entity Relationship Diagram plugin allows customization of the Model and rendering Options.
 
-![Entity Relationship Options](images/entity-relationship-options.png)
+![Entity Relationship Options](https://raw.githubusercontent.com/opticore/netbox-entity-relationship/main/docs/images/entity-relationship-options.png)
 
 ### App
 A Django app is a self-contained module that provides a specific functionality or set of functionalities within a Django project.
@@ -36,8 +36,8 @@ Further simplification for readability of the diagram
 
 A render showing Icurve arrows, color code deletions whilst hiding edge labels with a left-to-right direction is shown below.
 
-![Entity Relationship Options Demonstration](images/entity-relationship-options-demonstration.png)
+![Entity Relationship Options Demonstration](https://github.com/opticore/netbox-entity-relationship/blob/main/docs/images/entity-relationship-options-demonstration.png)
 
 ### Darkmode
 Compatibility with Netbox's light and dark mode is also provided.
-![Entity Relationship Darkmode](images/entity-relationship-darkmode.png)
+![Entity Relationship Darkmode](https://github.com/opticore/netbox-entity-relationship/blob/main/docs/images/entity-relationship-darkmode.png)

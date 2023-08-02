@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "netbox_entity_relationship"
-version = "0.1.0"
+version = "0.1.1"
 description = "Plugin for Entity Relationship Diagram"
 authors = ["apishark <support@opticoreit.com>"]
 readme = "README.md"
